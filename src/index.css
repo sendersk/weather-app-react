@@ -9,13 +9,20 @@ body {
 }
 
 .app {
+  margin: auto;
+  max-width: 768px;
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
-  width: 100%;
-  height: 100%;
   transition: .4s ease-out;
 }
+
+@media(maxi-width: 768px) {
+  .app {
+    width: 100%;
+  }
+}
+
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
